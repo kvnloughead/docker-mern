@@ -1,0 +1,86 @@
+.card {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #e9e9e9;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.card__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  gap: 10px;
+}
+
+.card__title {
+  padding: 2px 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: white;
+  border-radius: 4px;
+  margin: 0;
+  max-width: 200px;
+}
+
+.card__like-count {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.card__like-button {
+  width: 21px;
+  height: 19px;
+  background: transparent url("../../images/like-inactive.svg") center no-repeat;
+  /* Later it will be defined in the modifier */
+  background-size: 21px 18px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+}
+
+.card__like-button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.card__like-button_is-active {
+  background: transparent url("../../images/like-active.svg") no-repeat;
+}
+
+.card__image:hover {
+  cursor: pointer;
+}
+
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 25px 15px 31px 21px;
+}
+
+.card__delete-button_visible {
+  display: block;
+}
+
+.card__delete-button_hidden {
+  display: none;
+}

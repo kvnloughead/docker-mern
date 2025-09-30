@@ -1,0 +1,34 @@
+.modal__content_content_image {
+  padding: 0;
+  overflow: hidden;
+}
+
+.modal__image {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.modal__footer {
+  padding: 20px 32px;
+}
+
+.modal__footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__caption {
+  margin: 6px 0;
+}
+
+.modal__delete-button {
+  background: transparent;
+  border: none;
+  color: #ff4d00;
+}
+
+.modal__delete-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}

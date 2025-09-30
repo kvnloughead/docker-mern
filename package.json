@@ -1,0 +1,21 @@
+{
+  "name": "wtwr",
+  "version": "1.0.0",
+  "description": "WTWR - Sprint 14 frontend and Sprint 13 backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "docker:build": "docker build . -f ./frontend/Dockerfile.reactUI -t docker-mern-example"
+  },
+  "author": "TripleTen",
+  "license": "ISC",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^2.8.8"
+  }
+}

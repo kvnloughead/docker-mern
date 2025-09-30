@@ -1,0 +1,18 @@
+.weather-card {
+  height: 80px;
+  background: #00a3ff;
+  border-radius: 12px;
+  padding: 0 0 0 16px;
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .weather-card {
+    margin-bottom: 40px;
+  }
+}
