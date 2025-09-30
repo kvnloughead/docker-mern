@@ -25,9 +25,9 @@ services:
     ports:
       - "3001:3001"
     environment:
-      - PORT=3001
-      - MONGODB_URI=mongodb://mongodb:27017/wtwr_db
-      - NODE_ENV=development
+      - NODE_PORT=${NODE_PORT}
+      - MONGODB_URI=${MONGODB_URI}
+      - NODE_ENV=${NODE_ENV}
     depends_on:
       mongodb:
         condition: service_healthy
@@ -37,7 +37,7 @@ services:
   frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile.reactUI
+      dockerfile: Dockerfile
     container_name: wtwr-frontend
     ports:
       - "3000:80"
